@@ -1,10 +1,6 @@
 import { env } from 'process';
 
-import { ChatMessage, SendMessageOptions } from 'bing-chat'
-
-// import { ChatGPTError, ChatMessage, SendMessageOptions } from 'chatgpt';
-
-
+import { ChatMessage, SendMessageOptions } from 'bing-chat';
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
 
