@@ -1,4 +1,4 @@
-import { ChatMessage } from 'chatgpt';
+import { ChatMessage } from 'bing-chat';
 import classNames from 'classnames';
 import Image from 'next/image';
 import { FC } from 'react';

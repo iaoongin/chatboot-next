@@ -1,10 +1,10 @@
 import { env } from 'process';
 
-import { ChatGPTAPI } from 'chatgpt';
+import { BingChat } from 'bing-chat';
 
 const apiInstanceMap = new Map();
 
-export function getAPIInstance(OPENAI_API_KEY: string): ChatGPTAPI {
+export function getAPIInstance(OPENAI_API_KEY: string): BingChat {
   if (apiInstanceMap.has(OPENAI_API_KEY)) {
     return apiInstanceMap.get(OPENAI_API_KEY);
   }
@@ -16,7 +16,7 @@ export function getAPIInstance(OPENAI_API_KEY: string): ChatGPTAPI {
     apiKey = openaiApiKeyAliasMap[OPENAI_API_KEY];
   }
 
-  const api = new ChatGPTAPI({ apiKey });
+  const api = new BingChat({ cookie: apiKey });
   apiInstanceMap.set(OPENAI_API_KEY, api);
 
   return api;

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 13000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -17,6 +17,7 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "autoprefixer": "^10.4.14",
+    "bing-chat": "^0.2.3",
     "chatgpt": "^5.0.10",
     "classnames": "^2.3.2",
     "cookies-next": "^2.1.1",
